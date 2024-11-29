@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mridini.github.io/sitemap.xml
+Host: https://mridini.github.io
