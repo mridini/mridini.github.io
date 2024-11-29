@@ -1,8 +1,8 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "mtp2",
+  "description": "Mridini's Portfolio Website",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Mridini Thippisetty <mridinithippisetty@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/mridini/mridini.github.io"
@@ -21,7 +21,7 @@
     "clean": "gatsby clean",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

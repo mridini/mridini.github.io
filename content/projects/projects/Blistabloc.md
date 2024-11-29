@@ -1,5 +1,7 @@
 ---
 date: '2018-05-01'
+ios: "iOS App Content"
+android: "Android App Content"
 title: 'blistabloc'
 github: ''
 external: 'https://blistabloc.com/'

@@ -244,7 +244,7 @@ const Jobs = () => {
 
   return (
     <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Where I’ve Worked</h2>
+      <h2 className="numbered-heading">My Skills</h2>
 
       <div className="inner">
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
@@ -284,7 +284,7 @@ const Jobs = () => {
                     aria-labelledby={`tab-${i}`}
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}>
-                    <h3>
+                    {/* <h3>
                       <span>{title}</span>
                       <span className="company">
                         &nbsp;@&nbsp;
@@ -292,9 +292,9 @@ const Jobs = () => {
                           {company}
                         </a>
                       </span>
-                    </h3>
+                    </h3> */}
 
-                    <p className="range">{range}</p>
+                    {/* <p className="range">{range}</p> */}
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

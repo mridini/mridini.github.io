@@ -27,7 +27,7 @@ const StyledProjectsSection = styled.section`
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
@@ -206,10 +206,12 @@ const Projects = () => {
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  const GRID_LIMIT = 6;
+  const PROJECTS_INCREMENT = 2;
   const projects = data.projects.edges.filter(({ node }) => node);
-  const firstSix = projects.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projects : firstSix;
+  // const firstSix = projects.slice(0, GRID_LIMIT);
+  const projectsToShow = showMore
+    ? projects.slice(0, projects.length)
+    : projects.slice(0, PROJECTS_INCREMENT);
 
   const projectInner = node => {
     const { frontmatter, html } = node;
@@ -265,11 +267,11 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+      <h2 ref={revealTitle}>Some Personal Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      {/* <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
-      </Link>
+      </Link> */}
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
@@ -281,24 +283,26 @@ const Projects = () => {
           </>
         ) : (
           <TransitionGroup component={null}>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <CSSTransition
-                  key={i}
-                  classNames="fadeup"
-                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
-                  <StyledProject
+              {projectsToShow &&
+                projectsToShow.map(({ node }, i) => (
+                  <CSSTransition
                     key={i}
-                    ref={el => (revealProjects.current[i] = el)}
-                    style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
-                    {projectInner(node)}
-                  </StyledProject>
-                </CSSTransition>
-              ))}
-          </TransitionGroup>
+                    classNames="fadeup"
+                    timeout={i >= PROJECTS_INCREMENT ? (i - PROJECTS_INCREMENT) * 300 : 300}
+                    exit={false}>
+                    <StyledProject
+                      key={i}
+                      ref={el => (revealProjects.current[i] = el)}
+                      style={{
+                        transitionDelay: `${
+                          i >= PROJECTS_INCREMENT ? (i - PROJECTS_INCREMENT) * 100 : 0
+                        }ms`,
+                      }}>
+                      {projectInner(node)}
+                    </StyledProject>
+                  </CSSTransition>
+                ))}
+            </TransitionGroup>
         )}
       </ul>
 
