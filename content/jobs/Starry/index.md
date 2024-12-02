@@ -9,8 +9,6 @@ url: 'https://starry.com/'
 
 - Elastic
 - Palo Alto
-- Jira
-- Confluence
 - Cherwell
 - AWS
 - GCP
@@ -18,3 +16,6 @@ url: 'https://starry.com/'
 - Kubernetes
 - Jenkins
 - Kafka
+- Hadoop
+- Jira
+- Confluence

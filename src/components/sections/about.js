@@ -132,33 +132,44 @@ const About = () => {
       <h2 className="numbered-heading">About Me</h2>
 
       <div className="inner">
-      <StyledText>
+        <StyledText>
           <div>
             <p>
-              Hello! My name is Mridini (Mree-duh-nee), and I am passionate about software
-              development, data analytics, and cybersecurity. My interest in computer science
-              started in 2018 when I joined <a href="https://girlswhocode.com/">Girls Who Code</a>,
-              an experience that ignitied my curiousity for software development and laid the
-              foundation for my career aspirations.
+              Hello! My name is Mridini (Mree-duh-nee), and I am an aspiring software engineer with
+              a focus on cybersecurity, data science, and machine learning.
+            </p>
+
+            <p>
+              My interest in computer science started in 2018 when I joined{' '}
+              <a href="https://girlswhocode.com/">Girls Who Code</a>, an experience that ignitied my
+              curiousity for software development and laid the foundation for my career aspirations.
             </p>
 
             <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
+              <a href="https://www.wellsfargo.com/">a big four bank</a>,{' '}
               <a href="https://www.transunion.com/?atvy=%7B%22258139%22%3A%22Experience+A%22%7D">
                 a fin-tech industry leader
               </a>
               , <a href="https://www.elevatethefuture.org/project-falcon/">a nonprofit start-up</a>,{' '}
-              <a href="https://www.wellsfargo.com/">a Fortune 500 financial institution</a>, and my
-              university's{' '}
+              and my university's{' '}
               <a href="https://it.wisc.edu/about/division-of-information-technology/enterprise-information-security-services/office-of-cybersecurity/">
                 {' '}
                 cybersecurity operations center
               </a>
-              . My main goal is to create innovative solutions that advance society while upholding
-              the ethical responsibilities developers have in our digital world.
+              . I'm also heavily involved in <a href="https://mxm.math.wisc.edu/">research</a>.
             </p>
 
-            <p>Outside of tech, I enjoy fitness, cooking, and reading!</p>
+            <p>
+              With proven experience in developing technical solutions in finance, security, and
+              research, I aim to apply my analytical skills to create innovative solutions that
+              advance society, uphold ethical responsibilities, and build lasting connections along
+              the way.
+            </p>
+
+            <p>
+              Outside of tech, I enjoy fitness, cooking, and reading! (Books recs coming soon...)
+            </p>
           </div>
 
           {/* <ul className="skills-list">

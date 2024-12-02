@@ -9,15 +9,13 @@ url: 'https://www.apple.com/music/'
 
 - Java
 - Python
-- C
+- C/C++
 - JavaScript
 - HTML
 - CSS
 - SQL
-- Bash
-- Powershell
 - R
 - MATLAB
-- x86 Assembly
-- Cassandra
 - .NET
+- Bash
+- x86 Assembly

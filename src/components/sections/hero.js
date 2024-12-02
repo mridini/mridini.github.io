@@ -65,8 +65,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I'm an aspiring computer and data scientist with a deep passion for leveraging technology to
-        drive positive change. Currently, I'm a student at the{' '}
+        I'm an aspiring software engineer with a deep passion for leveraging technology to create a
+        positive impact. Currently, I'm a student at the{' '}
         <a href="https://www.cs.wisc.edu/" target="_blank" rel="noreferrer">
           University of Wisconsin-Madison
         </a>

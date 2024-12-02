@@ -9,12 +9,16 @@ url: 'https://www.upstatement.com/'
 
 - Algorithms
 - Operating Systems
-- Cryptography
+- Software Development
 - Networks
 - Databases
 - Big Data Systems
+- Cryptography
 - Machine Learning
 - Artificial Intelligence
 - Cloud Computing
 - UI/UX Development
 - Agile Methodologies
+- CI/CD Development
+- Collaboration
+- Debugging and Troubleshooting
