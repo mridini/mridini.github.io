@@ -18,3 +18,4 @@ webpack-runtime-*
 # Ignore system files
 .DS_Store
 Thumbs.db
+.DS_Store
